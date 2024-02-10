@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API Rick And Morty</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="char-conteiner">
+            <div class="picture-container">
+                <img class="picture" src="assets/Loading.gif" alt="">
+            </div>            
+            <button class="again" onClick="window.location.reload();" type="submit">Again</button>
+            <div class="data">
+                <ul>
+                    <div class="row">
+                        <span>Name: </span>
+                        <li id="name">Loading...</li>
+                    </div>
+                    <div class="row">
+                        <span>Status: </span>
+                        <li id="status">Loading...</li>
+                    </div>
+                    <div class="row">
+                        <span>Species: </span>
+                        <li id="species">Loading...</li>
+                    </div>
+                    <div class="row">
+                        <span>Type: </span>
+                        <li id="type">Loading...</li>
+                    </div>
+                    <div class="row">
+                        <span>Gender: </span>
+                        <li id="gender">Loading...</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script/api.js"></script>
+    <script defer src="script/script.js"></script>
+</body>
+</html>

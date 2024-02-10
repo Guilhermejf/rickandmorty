@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    padding-top: 1.5rem;
+    height: 100vh;
+    background-size: cover;
+    background-color: black;
+}
+.picture{
+    border-radius: 5px;
+}
+
+.char-conteiner{
+    background-color: white;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 10px #0ff;
+}
+
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+
+
+.data{
+    width: 100%;
+    padding: 1.6rem;        
+}
+
+.data ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.picture-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.dead#status::after{
+    content: '';
+    display: inline-block;
+    margin-left: .3rem;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.icons8.com/ios-filled/50/4D4D4D/skull.png");
+}
+
+.alive#status::after{
+    content: '';
+    display: inline-block;
+    margin-left: .3rem;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/40C057/external-heart-rate-medical-icongeek26-glyph-icongeek26.png");
+}
+
+.unknown#status::after{
+    content: '';
+    display: inline-block;
+    margin-left: .3rem;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.icons8.com/ios-glyphs/30/FAB005/help.png");
+}
+
+.again{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: .3rem;
+    border-radius: 8px;
+    width: 75px;
+    border: 1px solid black;
+}
+
+.again:hover{
+    background-color: #0ff;
+    border: 1px solid #0ff;
+    cursor: pointer;
+}
